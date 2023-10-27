@@ -40,8 +40,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,8 +49,6 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +57,10 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -144,7 +145,7 @@
             this.textBox1.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox1.Location = new System.Drawing.Point(182, 169);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(106, 38);
+            this.textBox1.Size = new System.Drawing.Size(144, 38);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
@@ -152,12 +153,12 @@
             this.textBox2.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox2.Location = new System.Drawing.Point(182, 220);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(106, 38);
+            this.textBox2.Size = new System.Drawing.Size(144, 38);
             this.textBox2.TabIndex = 8;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(456, 342);
+            this.richTextBox1.Location = new System.Drawing.Point(442, 359);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(100, 96);
             this.richTextBox1.TabIndex = 9;
@@ -176,17 +177,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "進出貨";
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 30);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(60, 23);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "進貨";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -198,6 +188,17 @@
             this.radioButton2.Text = "出貨";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 30);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(60, 23);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "進貨";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -208,9 +209,9 @@
             "德城牌尿素",
             "雋隆氯化銨",
             "純德牌鎂源素1號"});
-            this.comboBox1.Location = new System.Drawing.Point(188, 113);
+            this.comboBox1.Location = new System.Drawing.Point(182, 113);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 37);
+            this.comboBox1.Size = new System.Drawing.Size(144, 37);
             this.comboBox1.TabIndex = 11;
             // 
             // menuStrip1
@@ -220,7 +221,7 @@
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(981, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(981, 27);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -230,7 +231,7 @@
             this.readMeToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(59, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(59, 23);
             this.toolStripMenuItem1.Text = "Read";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -255,7 +256,7 @@
             this.tabControl1.Location = new System.Drawing.Point(353, 63);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(608, 273);
+            this.tabControl1.Size = new System.Drawing.Size(608, 290);
             this.tabControl1.TabIndex = 13;
             // 
             // tabPage1
@@ -264,30 +265,10 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(600, 244);
+            this.tabPage1.Size = new System.Drawing.Size(600, 261);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "資料列表";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(507, 125);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "出貨圖表";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(507, 125);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "統計";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -305,7 +286,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(588, 235);
+            this.dataGridView1.Size = new System.Drawing.Size(588, 252);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -351,6 +332,26 @@
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(600, 244);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "出貨圖表";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(600, 244);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "統計";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Fertilizerstatistics3.Properties.Resources._300;
@@ -361,11 +362,21 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(837, 378);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(49, 20);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 469);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.comboBox1);
@@ -431,6 +442,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
     }
 }
 
